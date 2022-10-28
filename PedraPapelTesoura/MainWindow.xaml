@@ -1,0 +1,32 @@
+﻿<Window x:Class="PedraPapelTesoura.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PedraPapelTesoura"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="450"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <Grid x:Name="txtFundo" Background="#FF3C0969">
+        <Image x:Name="imgPapel2" HorizontalAlignment="Center" Height="100" Margin="200,0,0,100" VerticalAlignment="Center" Width="86" Source="/papel.png" Visibility="Hidden"/>
+        <Image x:Name="imgPedra2" HorizontalAlignment="Center" Height="100" Margin="200,0,0,100" VerticalAlignment="Center" Width="86" Source="/rock.png" Visibility="Hidden"/>
+        <TextBlock x:Name="txtVencedor" HorizontalAlignment="Center" Margin="0,0,0,350" TextWrapping="Wrap" VerticalAlignment="Center" Text="Vencedor" FontSize="20" Foreground="#FFFFCA06"/>
+        <Image x:Name="imgTesoura" HorizontalAlignment="Center" Height="100" Margin="0,0,200,100" VerticalAlignment="Center" Width="86" Source="/scissors.png" Visibility="Hidden"/>
+        <Image x:Name="imgTesoura2" HorizontalAlignment="Center" Height="100" Margin="200,0,0,100" VerticalAlignment="Center" Width="86" Source="/scissors.png" Visibility="Hidden"/>
+        <Image x:Name="imgPato2" HorizontalAlignment="Left" Height="100" Margin="282,125,0,0" VerticalAlignment="Top" Width="86" Source="/pixil-frame-0 (1).png"/>
+        <TextBlock x:Name="txtVoce" HorizontalAlignment="Center" Margin="0,0,200,240" TextWrapping="Wrap" VerticalAlignment="Center" Text="Você" FontSize="20" Foreground="#FFFFCA06"/>
+        <TextBlock x:Name="txtPC" HorizontalAlignment="Center" Margin="200,0,0,240" TextWrapping="Wrap" VerticalAlignment="Center" Text="Computador" FontSize="20" Foreground="#FFFFCA06"/>
+        <TextBlock x:Name="txtVS" HorizontalAlignment="Center" Margin="0,0,0,100" TextWrapping="Wrap" Text="VS" VerticalAlignment="Center" FontSize="24" Foreground="#FFFFCA06"/>
+        <TextBlock x:Name="txtGanhouVC" HorizontalAlignment="Center" Margin="0,50,200,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="22" Foreground="#FFFFCA06"/>
+        <TextBlock x:Name="txtGanhouPC" HorizontalAlignment="Center" Margin="200,50,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="22" Foreground="#FFFFCA06"/>
+        <Button x:Name="btnPedra" Content="Pedra" HorizontalAlignment="Center" Margin="0,180,0,0" VerticalAlignment="Center" FontSize="24" Width="160" Height="47" Background="#FFF5EC57" Foreground="#FF3C0969" Click="ClickPedra"/>
+        <Button x:Name="txtPapel" Content="Papel" HorizontalAlignment="Center" Margin="0,300,200,0" VerticalAlignment="Center" FontSize="24" Width="160" Height="47" Background="#FFF5EC57" Foreground="#FF3C0969" Click="ClickPapel"/>
+        <Button x:Name="txtTesoura" Content="Tesoura" HorizontalAlignment="Center" Margin="200,300,0,0" VerticalAlignment="Center" FontSize="24" Width="160" Height="47" Background="#FFF5EC57" Foreground="#FF3C0969" Click="ClickTesoura"/>
+        <Image x:Name="imgPapel" HorizontalAlignment="Center" Height="100" Margin="0,0,200,100" VerticalAlignment="Center" Width="86" Source="/papel.png" Visibility="Hidden"/>
+        <Image x:Name="imgPedra" HorizontalAlignment="Center" Height="100" Margin="0,0,200,100" VerticalAlignment="Center" Width="86" Source="/rock.png" Visibility="Hidden"/>
+        <Image x:Name="imgPato" HorizontalAlignment="Center" Height="100" Margin="0,0,200,100" VerticalAlignment="Center" Width="86" Source="/pixil-frame-0 (1).png"/>
+        <Button x:Name="btnFechar" Content="X" HorizontalAlignment="Center" Margin="400,0,0,380" VerticalAlignment="Center" Width="30" Height="30" Background="#FFF5EC57" Click="ClickFechar"/>
+        <Button x:Name="btnReset" Content="Reiniciar" HorizontalAlignment="Center" Margin="0,0,365,380" VerticalAlignment="Center" Width="65" Height="30" Background="#FFF5EC57" Click="ClickReset"/>
+
+    </Grid>
+</Window>
